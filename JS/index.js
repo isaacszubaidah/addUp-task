@@ -2,12 +2,12 @@ document.getElementById('addUpForm').addEventListener('submit', function (event)
   event.preventDefault(); // Prevent the form from submitting and reloading the page
 
   // Get the user inputs
-  const startInput = document.getElementById('startInput').value;
-  const endInput = document.getElementById('endInput').value;
+ let startInput = document.getElementById('startInput').value;
+ let endInput = document.getElementById('endInput').value;
 
   // Convert the inputs to numbers
-  const start = parseInt(startInput);
-  const end = parseInt(endInput);
+let start = parseInt(startInput);
+ let end = parseInt(endInput);
 
   // Check if the inputs are valid integers
   if (isNaN(start) || isNaN(end)) {
